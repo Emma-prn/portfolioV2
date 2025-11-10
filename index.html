@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="js/flip.js" defer></script>
+</head>
+<body>
+  <header class="accueil">
+    <aside class="titre">
+      <h1>Emma Pernin</h1>
+      <h2>Développeuse Créative</h2>
+      <a class="boutton floating" href="#personnage" title="Aller à la présentation">Commencer</a>
+    </aside>
+  </header>
+  <div id="personnage" class="center">
+    <h2 class="categorie">Personnage</h2>
+    <div class="container">
+      <section class="perso">
+        <img class="bloc" src="https://picsum.photos/id/24/300/1000" width="55%" alt="">
+      </section>
+      <aside class="box">
+        <section class="resume">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit officia eaque adipisci vel accusamus esse sed ad atque quasi? Doloremque iusto maxime quidem? Aut alias quibusdam, omnis ipsa tenetur dolores?</section>
+        <a class="boutton" href="profil.html" title="Accès au profil">En savoir plus</a>
+      </aside>
+    </div>
+    <div class="navigation">
+      <nav>
+        <a href="#personnage">Perso</a>
+        <a href="#inventaire">Inv</a>
+        <a href="#communaute">Commu</a>
+      </nav>
+    </div>
+  </div>
+  <div id="inventaire" class="center">
+    <h2 class="categorie">Inventaire</h2>
+    <div class="container col">
+      <article class="presproj">
+        <section class="projet web floating">
+          <img src="https://picsum.photos/id/24/500" alt="">
+        </section>
+        <section class="projet prog floating-inverse">
+          <img src="https://picsum.photos/id/24/500" alt="">
+        </section>
+        <section class="projet design floating">
+          <img src="https://picsum.photos/id/24/500" alt="">
+        </section>
+      </article>
+      <a class="boutton floating" href="projets.html" title="Accès aux projets">Voir tous les projets</a>
+    </div>
+  </div>
+  <div id="communaute" class="center">
+    <h2 class="categorie">Communauté</h2>
+    <div class="container">
+      <article>
+        <a class="boutton floating" href="" title="Accès au Linkedin - Nouvel onglet" target="_blank">Linkedin</a>
+        <br>
+        <br>
+        <a class="boutton floating" href="" title="Accès au github - Nouvel onglet" target="_blank">Github</a>
+      </article>
+      <section class="perso">
+        <canvas id="network" style="width:100%; height:100%;"></canvas>
+        <!--<img class="bloc" src="https://picsum.photos/id/24/300/1000" width="55%" alt="">-->
+      </section>
+    </div>
+  </div>
+  <footer>
+    <p>Site crée par Emma Pernin - 2020 / 2025</p>
+  </footer>
+</body>
+</html>
