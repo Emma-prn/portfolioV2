@@ -20,7 +20,7 @@
             <a class="boutton filter" data-filter="three-d">3D</a>
         </div>
         <div class="inventaire">
-            <a href="" class="filter-item">
+            <a href="#" class="filter-item" data-modal-target="#modal1">
                 <section class="projet web">
                     <img src="img/portraitchinois.JPG" alt="Popup portrait chinois">
                     <div class="overlay">
@@ -28,7 +28,7 @@
                     </div>
                 </section>
             </a>
-            <section class="show">
+            <section id="modal1" class="modal">
                 <h3>Portrait Chinois</h3>
                 <img class="bloc" src="img/portrait1024.jpg" alt="">
                 <br>
@@ -48,7 +48,7 @@
                 <p class="composants">Composants : <i class="devicon-html5-plain-wordmark colored"></i> <i class="devicon-css3-plain-wordmark colored"></i> <i class="devicon-photoshop-plain"></i> <i class="devicon-illustrator-plain"></i></p>
                 <p>Obtention : Quête académique - Projet de 1ère année de DUT MMI, intégration web</p>
                 <a class="boutton" href="" title="Site - Nouvel Onglet" target="_blank">Accès au site</a>
-                <span class="close popup">✖</span>
+                <span class="close close-popup">✖</span>
             </section>
             <a href="" class="filter-item">
                 <section class="projet web">
@@ -179,6 +179,7 @@
                 </section>
             </a>
         </div>
+        <div class="modal-overlay"></div>
     </div>
     <footer>
         <p>Site crée par Emma Pernin - 2020 / 2025</p>

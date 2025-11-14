@@ -340,7 +340,6 @@ a:visited {
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 
 .projet:hover .overlay {
@@ -352,20 +351,45 @@ a:visited {
   border-radius: 5%;
 }
 
-.show {
+.modal {
   height: 95vh;
   display: block;
   position: fixed;
   z-index: 200;
   top: 50vh;
   left: 50vw;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0;
+  transition: .5s ease;
   padding: 15px;
   overflow: auto;
 }
 
-.show img {
+.modal.open {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.modal img {
   width: 100%;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 100;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: .5s ease;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .composants {
@@ -396,7 +420,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 150;
+  z-index: 50;
   font-size: 2rem;
   transition: background-color 0.5s, box-shadow 0.5s;
 }
@@ -406,7 +430,7 @@ a:visited {
     box-shadow: 0 4px 8px 0 red ;
 }
 
-.popup {
+.close-popup {
   top: 15px;
   width: 20px;
   height: 20px;
