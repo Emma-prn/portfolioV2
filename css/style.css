@@ -6,6 +6,10 @@
   --border-color: lightgray;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *, ::after, ::before {
   box-sizing: border-box;
 }
@@ -349,6 +353,8 @@ a:visited {
 .projet img {
   width: 95%;
   border-radius: 5%;
+  height: 95%;
+  object-fit: cover;
 }
 
 .modal {

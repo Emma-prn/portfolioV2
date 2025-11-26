@@ -1,11 +1,3 @@
-/*$(document).ready(function(){
-  $('a[href$="e"]').click(function(t){
-    t.preventDefault();
-    var e=$(this).attr("href");
-    $("html,body").animate({scrollTop:$(e).offset().top},600)
-  })
-});*/
-
 const card = document.querySelector('.card');
   card.addEventListener('mousemove', (e) => {
     const rect = card.getBoundingClientRect();
