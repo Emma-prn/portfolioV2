@@ -267,6 +267,7 @@ a:visited {
 }
 
 .square {
+  position: relative;
   background-color: #868686;
   width: 8.5vw;
   height: 8.5vw;
@@ -581,7 +582,7 @@ a:visited {
   #index-footer p {
     margin-bottom: 50px;
   }
-  
+
   nav {
     width: 100vw;
   }
