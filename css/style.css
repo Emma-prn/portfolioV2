@@ -199,10 +199,6 @@ a:visited {
 /* -------------*/
 
 /* -- PRESENTATION -- */
-.character {
-  margin-top: rem;
-}
-
 .card {
   background-color: darkcyan;
   padding: 1rem;
@@ -581,6 +577,10 @@ a:visited {
 @media (max-width: 576px) {
   #index-footer p {
     margin-bottom: 50px;
+  }
+
+  .character {
+    margin-top: 5rem;
   }
 
   nav {
