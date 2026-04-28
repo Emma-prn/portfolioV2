@@ -72,6 +72,20 @@ nav {
   flex-direction: column;
   justify-content: center;
 }
+
+hr {
+  border: none;
+  border-top: 3px double rgba(43, 183, 164, 0.9);
+  color: rgba(43, 183, 164, 0.9);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  width: 50vw;
+}
+
+footer p {
+  text-align: center;
+}
 /* -- BOUTTON -- */
 a {
   text-decoration: none;
@@ -112,6 +126,10 @@ a:visited {
 
 .boutton[data-filter="three-d"]:hover, .three-d:hover {
   box-shadow: 0 4px 8px 0 var(--three-d-color);
+}
+
+.border:hover {
+  box-shadow: 0 4px 8px 0 var(--border-color);
 }
 
 .active {
@@ -244,6 +262,10 @@ a:visited {
   flex-wrap: wrap;
 }
 
+.slot a {
+  cursor: pointer;
+}
+
 .square {
   background-color: #868686;
   width: 8.5vw;
@@ -259,6 +281,41 @@ a:visited {
 
 .hide {
   display: none;
+}
+
+.square .tooltip {
+  opacity: 0;
+  text-align: center;
+  width: 125px;
+  padding: 6px;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  transition: opacity 0.25s ease
+}
+
+.square .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.9) transparent transparent transparent;
+}
+
+/* Hover effect */
+.square:hover .tooltip {
+  opacity: 1;
+}
+
+.border {
+  border: 3px solid var(--border-color);
+  transition: box-shadow 0.5s;
 }
 /* ------------------ */
 
@@ -301,6 +358,19 @@ a:visited {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.projet.prog.three-d {
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#868686, #868686) padding-box,
+    linear-gradient(to right, var(--three-d-color), var(--prog-color)) border-box;
+}
+
+.projet.prog.three-d:hover {
+  box-shadow: 
+    -3px -3px 8px var(--three-d-color),
+    3px 3px 8px var(--prog-color);
 }
 
 .filters {
@@ -358,7 +428,6 @@ a:visited {
 }
 
 .modal {
-  height: 95vh;
   display: block;
   position: fixed;
   z-index: 200;
@@ -369,6 +438,10 @@ a:visited {
   transition: .5s ease;
   padding: 15px;
   overflow: auto;
+}
+
+.inventaire .modal {
+  height: 95vh;
 }
 
 .modal.open {
@@ -397,22 +470,12 @@ a:visited {
   opacity: 1;
   pointer-events: all;
 }
-
-.composants {
-  display: flex;
-  align-items: center;
-}
-
-.composants i {
-  font-size: 2.5rem;
-}
 /* ------------- */
 
 /* -- Commu -- */
 #network {
   width: 100%;
 }
-
 
 .close {
   padding: 0.2rem;
@@ -504,9 +567,21 @@ a:visited {
     width: 45vw;
     height: 45vw;
   }
+
+  .inventaire .modal {
+    width: 100%;
+  }
+
+  .slot .modal {
+    width: 95%;
+  }
 }
 
 @media (max-width: 576px) {
+  #index-footer p {
+    margin-bottom: 50px;
+  }
+  
   nav {
     width: 100vw;
   }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <script src="js/flip.js" defer></script>
+    <script defer src="js/modal.js"></script>
 </head>
 <body>
     <div class="center">
@@ -262,11 +263,16 @@
         <h2 class="categorie">Atouts</h2>
         <section class="competences">
             <div class="slot">
-                <a href="">
-                    <aside class="square">
-                        <img src="https://picsum.photos/id/60/500" alt="Popup Dessin" title="Dessin">
+                <a data-modal-target="#perk1">
+                    <aside class="square border">
+                        <img src="img/atouts/book.png" alt="Popup Lecture" title="Lecture">
                     </aside>
                 </a>
+                <section id="perk1" class="modal">
+                    <h4>Lectrice Insatiable</h4>
+                    <p>Du berceau jusqu'à aujourd'hui, la lecture ne m'a jamais quittée. Romans de tous genres, mangas et bandes dessinées nourrissent mon imagination et élargissent mes horizons.</p>
+                    <span class="close close-popup">✖</span>
+                </section>
                 <a href="">
                     <aside class="square">
                         <img src="https://picsum.photos/id/60/500" alt="Popup Ecriture" title="Ecriture">
@@ -274,7 +280,7 @@
                 </a>
                 <a href="">
                     <aside class="square">
-                        <img src="img/atouts/book.png" alt="Popup Lecture" title="Lecture">
+                        <img src="https://picsum.photos/id/60/500" alt="Popup Dessin" title="Dessin">
                     </aside>
                 </a>
                 <a href="">
