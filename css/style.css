@@ -370,6 +370,19 @@ a:visited {
     3px 3px 8px var(--prog-color);
 }
 
+.projet.prog.design {
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#868686, #868686) padding-box,
+    linear-gradient(to right, var(--design-color), var(--prog-color)) border-box;
+}
+
+.projet.prog.design:hover {
+  box-shadow: 
+    -3px -3px 8px var(--design-color),
+    3px 3px 8px var(--prog-color);
+}
+
 .filters {
   width: 600px;
   margin-top: 5rem;
