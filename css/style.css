@@ -61,6 +61,12 @@ nav {
   bottom: 0;
 }
 
+.icon {
+  align-self: center;
+  width: 75px;
+  height: 75px;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -199,6 +205,10 @@ a:visited {
 /* -------------*/
 
 /* -- PRESENTATION -- */
+.character {
+  margin-top: 5rem;
+}
+
 .card {
   background-color: darkcyan;
   padding: 1rem;
@@ -406,7 +416,7 @@ a:visited {
   padding: 0;
 }
 
-.inventaire .projet {
+.inventaire .projet, .presproj .projet {
   cursor: pointer;
 }
 
@@ -587,10 +597,6 @@ a:visited {
 @media (max-width: 576px) {
   #index-footer p {
     margin-bottom: 50px;
-  }
-
-  .character {
-    margin-top: 5rem;
   }
 
   nav {
