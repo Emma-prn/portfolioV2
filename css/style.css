@@ -205,10 +205,6 @@ a:visited {
 /* -------------*/
 
 /* -- PRESENTATION -- */
-.character {
-  margin-top: 5rem;
-}
-
 .card {
   background-color: darkcyan;
   padding: 1rem;
@@ -574,12 +570,20 @@ a:visited {
     height: auto;
   }
 
+  .character {
+    margin-top: 5rem;
+  }
+
   .card {
     width: 45vw;
   }
 
   .perso {
     width: 30vw;
+  }
+
+  .etape {
+    width: 45vw;
   }
 
   .square {
