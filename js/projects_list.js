@@ -67,10 +67,10 @@ const design_projects = [
         id: 'inktober',
         img: 'inktober.png'
     },
-    {
-        id: 'dead-air',
-        img: 'test.jpg'
-    }
+    //{
+    //    id: 'dead-air',
+    //    img: 'test.jpg'
+    //}
 ]
 
 const projectSlots = {
