@@ -74,7 +74,7 @@ nav {
   transition: filter 0.2s ease;
 }
 
-.icon img:hover, .icon img:target {
+.icon img:hover {
   filter: drop-shadow(0 0 5px var(--border-color));
 }
 
