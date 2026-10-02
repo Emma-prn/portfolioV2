@@ -239,8 +239,9 @@ a:visited {
 
 /* -- PRESENTATION -- */
 .card {
-  background-color: darkcyan;
+  background-color: #1f1f1f;
   padding: 1rem;
+  border: 3px solid var(--border-color);
   border-radius: 5px;
   width: 20vw;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
