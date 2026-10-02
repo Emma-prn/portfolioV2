@@ -211,7 +211,14 @@ a:visited {
 }
 
 .perso {
-  width: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+  height: 70%;
+}
+
+.perso img {
+  position: relative;
+  filter: drop-shadow(0 0 5px var(--border-color));
 }
 /* -------------*/
 
@@ -590,7 +597,7 @@ a:visited {
   }
 
   .perso {
-    width: 30vw;
+    width: 50%;
   }
 
   .etape {
@@ -637,7 +644,12 @@ a:visited {
   }
 
   .perso {
-    width: 20vw;
+    width: 85%;
+    height: 50%;
+  }
+
+  .perso img {
+    width: 60%;
   }
 
   .card {
