@@ -689,8 +689,8 @@ a:visited {
   }
 
   .presproj .projet {
-    width: 35vw;
-    height: 35vw;
+    width: 55vw;
+    height: 55vw;
   }
 
   .projet {
@@ -714,5 +714,10 @@ a:visited {
 @media (max-width: 400px) {
   .perso img {
     width: 50%;
+  }
+
+  .presproj .projet {
+    width: 45vw;
+    height: 45vw;
   }
 }
